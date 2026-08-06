@@ -1,0 +1,8 @@
+METROPLEX v134
+- Portfolio cards returned to a balanced mobile height.
+- Mobile photo frame: 235 px (220 px on <=360 px screens).
+- Removed oversized 310 px crops from v133.
+- Images use cover only for compact previews.
+- Full original photo opens on tap/click in a lightbox with contain mode.
+- No grey side fields and no image stretching.
+- All cards retain equal height.

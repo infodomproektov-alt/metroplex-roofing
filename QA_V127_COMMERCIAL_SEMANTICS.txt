@@ -1,0 +1,6 @@
+METROPLEX v127 - commercial roofing semantic expansion
+
+Added bilingual commercial roofing service pages.
+Target object types: shopping malls, supermarkets, production buildings, workshops, meat-processing and food production facilities, warehouses, logistics complexes, service stations and administrative buildings.
+Added homepage cards, internal links, sitemap entries, Service and FAQ structured data, commercial lead form options, and semantic core rows.
+No prices, estimates, contracts, invented project counts, deadlines or guarantees added.

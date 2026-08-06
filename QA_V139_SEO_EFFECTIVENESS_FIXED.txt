@@ -1,0 +1,8 @@
+METROPLEX v139 SEO fixes
+
+- Corrected canonical, hreflang, og:url and JSON-LD URLs on RU/UA roof design pages.
+- Shortened overlong titles on commercial roofing, contacts, metal tile and one case page.
+- Rewrote short and repetitive descriptions on priority indexed blog pages in RU and UA.
+- Improved descriptions on privacy, editorial policy and root pages.
+- Reviewed noindex pages: 404 pages, article templates and previously identified weak secondary articles remain excluded intentionally.
+- Rechecked unique titles/descriptions, canonical consistency, sitemap and local links.

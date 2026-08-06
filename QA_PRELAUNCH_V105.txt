@@ -1,0 +1,14 @@
+METROPLEX v105 - prelaunch cleanup
+
+Completed:
+- removed obsolete repair/restoration service pages;
+- removed repair-focused blog pages and CMS entries;
+- removed portfolio items linked to the removed service;
+- removed obsolete QA_v99.txt;
+- removed deleted URLs from sitemap.xml;
+- added noindex to dynamic article templates and 404 pages;
+- made 404 titles and descriptions unique;
+- replaced links to deleted service pages with the main services section;
+- removed restoration filter chips from portfolio pages.
+
+Mobile/browser QA results are documented separately after runtime testing.

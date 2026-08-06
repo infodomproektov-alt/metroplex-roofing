@@ -1,0 +1,11 @@
+METROPLEX V118 GROWTH CONTENT QA
+
+Indexable HTML pages: 121
+Weak articles moved to noindex: 58
+Core expert articles retained per language: 42
+Service pages strengthened: 12
+New project design pages: 2
+New detailed case pages: 8 (4 UA + 4 RU)
+Experience blocks added: home/about UA+RU
+
+No fabricated prices, deadlines, guarantees or project quantities were added.

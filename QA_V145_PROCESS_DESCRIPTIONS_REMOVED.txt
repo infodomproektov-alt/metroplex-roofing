@@ -1,0 +1,5 @@
+METROPLEX v145
+
+Removed four descriptive paragraphs from the Ukrainian homepage process cards.
+Kept step numbers and headings.
+Verified removed phrases are absent from uk/index.html.

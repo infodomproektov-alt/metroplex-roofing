@@ -1,0 +1,36 @@
+METROPLEX v124 - mobile audit and compatibility improvements
+
+Checked target viewport classes:
+- 320 px: iPhone SE 1st generation and very small Android devices
+- 360 px: compact Android devices
+- 375 px: iPhone SE 2/3, iPhone 12/13 mini
+- 390/393 px: iPhone 12/13/14/15 Pro
+- 412/430 px: modern Android and iPhone Pro Max
+- 480 px: large phones and compact browser windows
+- landscape screens with limited height
+
+Implemented:
+- protected all pages against horizontal overflow
+- responsive header/logo/language switch/burger for 320 px screens
+- 44-48 px minimum touch targets
+- safe-area support for iPhone home indicator
+- mobile navigation height and scrolling on short screens
+- fluid H1/H2 typography and line-height
+- full-width CTA buttons and forms
+- 16 px form controls to prevent iOS input zoom
+- one-column content grids on narrow screens
+- special card layout for screens below 390 px
+- email and long text wrapping
+- responsive images, video, iframe and tables
+- bottom contact bar adapted to small screens and safe areas
+- landscape-height handling
+- reduced-motion accessibility support
+
+Static QA:
+- viewport meta present on all public HTML pages
+- mobile stylesheet v124 connected to all public HTML pages
+- no duplicate HTML documents
+- local CSS/JS/image paths checked
+- CSS brace balance checked
+
+Note: physical-device rendering can still vary slightly by browser version, installed font rendering and OS accessibility settings. The CSS now covers the common iPhone and Android viewport ranges from 320 px upward.

@@ -1,0 +1,29 @@
+METROPLEX v138 - PRELAUNCH AUDIT
+Date: 2026-08-04
+
+READY FOR: Netlify hosting + metroplex.com.ua
+
+FIXED
+- 14 broken links from service pages to Our Works fixed.
+- Root canonical aligned with the 301 redirect to /uk/.
+- Canonical and hreflang added to editorial policy pages.
+- hreflang added to technical approach pages.
+- Sitemap rebuilt from canonical URLs; redirecting root removed.
+- /index.html, /uk/index.html and /ru/index.html normalized with 301 redirects.
+- Safe global HTTP headers added.
+- ZIP package prepared with site files at archive root (no extra parent folder).
+
+REQUIRED IN NETLIFY AFTER DEPLOY
+1. Add custom domain metroplex.com.ua and www alias if used.
+2. Configure DNS exactly as Netlify shows.
+3. Wait for HTTPS certificate and enable forced HTTPS.
+4. Set environment variables TG_BOT_TOKEN and TG_CHAT_ID.
+5. Enable Identity and Git Gateway for /admin/.
+6. Invite the admin user and test login/save/upload.
+7. Submit https://metroplex.com.ua/sitemap.xml in Google Search Console.
+8. Test one real lead from UA and RU forms.
+
+LIMITATION
+Login, Git Gateway commits, Telegram delivery, DNS and SSL cannot be fully validated before the real Netlify deployment and environment variables are active.
+
+INDEXABLE CANONICAL URLS: 136

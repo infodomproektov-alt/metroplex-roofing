@@ -1,0 +1,16 @@
+METROPLEX v140 - LEGAL PAGES QA
+
+Created:
+- /uk/privacy-policy.html updated
+- /ru/privacy-policy.html updated
+- /uk/public-offer.html created
+- /ru/public-offer.html created
+
+Checks:
+HTML files: 201
+Footer pages missing offer link: 0
+Consent blocks missing offer link: 0
+Sitemap contains offer pages: YES
+
+Important:
+The offer does not invent prices, guarantees, timelines, registration number or owner name. Full legal details should be added after the FOP/company legal name and tax ID are supplied and reviewed by a Ukrainian lawyer.

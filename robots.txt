@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /.netlify/
+
+Sitemap: https://metroplex.com.ua/sitemap.xml
+Host: metroplex.com.ua

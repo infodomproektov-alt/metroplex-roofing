@@ -1,0 +1,9 @@
+METROPLEX v121 QA
+HTML files: 197
+Priority expert articles enhanced: 40 (20 UA + 20 RU)
+Service pages enhanced: 14
+Case pages enhanced: 16
+Technical approach pages added: 2
+Editorial policy pages added: 2
+Sitemap URLs: 137
+Broken local asset refs: 0

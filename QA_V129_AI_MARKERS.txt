@@ -1,0 +1,36 @@
+METROPLEX v129 - AI MARKER CONTENT AUDIT
+
+Checked content files: 227
+Changed files: 189
+Long dash characters before: 198
+Long dash characters after: 0
+Repeated boilerplate replacements: 370
+Template phrase rewrites: 190
+
+Residual phrase counts (context-dependent words are not removed blindly):
+- не просто: 0
+- является: 80
+- дозволяє: 20
+- данный : 0
+- данная : 0
+- данные : 6
+- даний : 24
+- дана : 0
+- дані : 6
+- комплексный подход: 0
+- комплексний підхід: 0
+- индивидуальный подход: 0
+- індивідуальний підхід: 0
+- оптимальное решение: 0
+- оптимальне рішення: 0
+- широкий спектр: 0
+- широкий вибір: 0
+- какие ошибки встречаются: 0
+- які помилки трапляються: 0
+
+Notes:
+- Em dash and en dash characters were removed from site text and metadata.
+- Repeated article boilerplate was diversified and shortened.
+- Formulaic intros using quoted article titles were rewritten.
+- Technical terms and factual wording were preserved.
+- Words such as "является" / "данные" were not globally deleted because blind replacement can damage grammar or meaning.

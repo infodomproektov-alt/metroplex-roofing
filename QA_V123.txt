@@ -1,0 +1,7 @@
+METROPLEX v123 QA
+Email: krovly.metroplex@ukr.net
+HTML files checked: 197
+Email placeholders/links: 176
+Schema email entries: 4
+Contact pages containing email: 2
+site-settings.json email: krovly.metroplex@ukr.net

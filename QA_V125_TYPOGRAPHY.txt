@@ -1,0 +1,11 @@
+METROPLEX v125 - content typography audit
+HTML pages checked: 197
+Typography override linked after all existing styles: yes
+Desktop body content: 17px / 1.68
+Mobile body content: 16px / 1.62
+Card descriptions: 15.5px desktop, 15px mobile, 14.5px only under 390px
+Article H2: 28-36px desktop, 25-31px mobile
+Article H3: 21-25px desktop, 20-23px mobile
+Readable text width: max 72ch
+Safari text autosizing protected by existing v124 rules
+Pages missing new CSS: 0

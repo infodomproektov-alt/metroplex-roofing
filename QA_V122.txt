@@ -1,0 +1,3 @@
+METROPLEX v122
+Added working hours: Monday-Saturday 09:00-17:00.
+Updated site settings, Decap CMS fields, contact pages, all footers, JS dynamic settings and Schema.org openingHoursSpecification.

@@ -1,0 +1,6 @@
+v144
+- Mobile header logo kept readable at responsive sizes.
+- Process card headings forced white on dark captions.
+- Descriptions use high-contrast light text.
+- Caption height increased to prevent clipping.
+- CSS cache updated to v144.

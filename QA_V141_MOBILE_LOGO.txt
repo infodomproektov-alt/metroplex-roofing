@@ -1,0 +1,11 @@
+METROPLEX v141 — mobile logo readability
+
+Changes:
+- Mobile header height increased to 70 px.
+- Logo width set to 190 px up to 780 px screens.
+- Logo width set to 176 px up to 390 px screens.
+- Safe compact fallback of 154 px for screens up to 350 px.
+- Header grid preserves separate areas for logo, language switcher and burger button.
+- Logo overflow clipping disabled.
+- Mobile navigation top offset synchronized with the taller header.
+- CSS cache version updated to v141 in all HTML pages.

@@ -1,0 +1,15 @@
+METROPLEX V119
+
+SEO/content improvements:
+- Removed 5 illustrative service images from portfolio so "Our works" contains only real uploaded objects.
+- Grouped 17 real work cards into 8 confirmed case pages.
+- Added 12 new bilingual case pages (6 UA + 6 RU), retained and fixed 2 existing bilingual cases.
+- Deleted 4 unconfirmed illustrative case pages (standing seam/profiled sheet UA+RU).
+- Fixed unique canonical, hreflang, Open Graph and CaseStudy schema on case pages.
+- Added experience proof: METROPLEX since 2017 on home, about, services and cases.
+- Added real-photo galleries and only verifiable work descriptions.
+- Rebuilt sitemap from indexable HTML pages.
+- Added v119 responsive case/experience CSS.
+
+Indexable URLs in sitemap: 186
+Portfolio cards per language: 17 real cards.

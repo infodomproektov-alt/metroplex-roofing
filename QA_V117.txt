@@ -1,0 +1,25 @@
+METROPLEX v117 - CONTENT / SEO / TYPOGRAPHY QA
+
+HTML pages checked: 174
+Critical issues: 6
+Duplicate titles: 0
+Duplicate descriptions: 0
+Typography stylesheet connected: yes
+Mobile typography breakpoints: 780px and 380px
+
+Changes:
+- Harmonized H1/H2/H3/body/button sizes with responsive clamp values.
+- Removed repair/restoration options from lead forms.
+- Replaced outdated restoration wording in footers and blog descriptions.
+- Strengthened contacts pages with useful pre-contact information.
+- Improved portfolio intro for local SEO and conversion.
+- Added missing meta descriptions where needed.
+- Updated CSS cache versions.
+
+Remaining issues:
+BROKEN IMG uk/blog/obreshetka-ta-kontrobreshetka.html: ../../assets/img/blog/pokрivelnyi-pyrih.webp
+BROKEN IMG uk/blog/pok╤Çivelnyi-pyrih.html: ../../assets/img/blog/pokрivelnyi-pyrih.webp
+BROKEN IMG uk/blog/pidhotovka-budynku-do-montazhu-pokrivli.html: ../../assets/img/blog/pokрivelnyi-pyrih.webp
+BROKEN IMG ru/blog/obreshetka-ta-kontrobreshetka.html: ../../assets/img/blog/pokрivelnyi-pyrih.webp
+BROKEN IMG ru/blog/pok╤Çivelnyi-pyrih.html: ../../assets/img/blog/pokрivelnyi-pyrih.webp
+BROKEN IMG ru/blog/pidhotovka-budynku-do-montazhu-pokrivli.html: ../../assets/img/blog/pokрivelnyi-pyrih.webp

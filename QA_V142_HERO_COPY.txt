@@ -1,0 +1,4 @@
+METROPLEX v142
+
+Updated Ukrainian homepage hero copy to sound more natural and logical.
+Verified old text is absent and new text is present.

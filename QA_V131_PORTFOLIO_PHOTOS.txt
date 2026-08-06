@@ -1,0 +1,6 @@
+V131
+- Portfolio cards remain equal size.
+- Mobile image area increased to 280 px.
+- Images use object-fit: contain, so the full photo is visible.
+- Soft blurred background fills unused space without black bars.
+- Added bottom spacing so fixed contact bar does not cover the final card.

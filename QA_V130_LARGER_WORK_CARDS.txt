@@ -1,0 +1,12 @@
+METROPLEX v130 - larger portfolio cards
+
+Changes:
+- Enlarged portfolio image area on desktop, tablet and mobile.
+- Kept all cards equal in height.
+- Desktop image height: 310px.
+- Tablet image height: 285px.
+- Mobile image height: 255px.
+- Small screens up to 360px: 235px.
+- Increased spacing between cards.
+- Preserved aligned titles, descriptions and CTA buttons.
+- Updated mobile-contact.css cache version to v130.

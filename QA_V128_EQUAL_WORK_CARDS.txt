@@ -1,0 +1,8 @@
+METROPLEX v128 - equal portfolio cards
+- Desktop: 3 columns, 600px card height, 260px image area
+- Tablet: 2 columns, 570px card height, 240px image area
+- Mobile: 1 column, 530px card height, 220px image area
+- Small screens <=360px: 510px card height, 205px image area
+- Titles and descriptions are clamped to prevent unequal card heights
+- Images fill a consistent frame without dark side bars
+- UA/RU works pages use cache version v128
