@@ -1,0 +1,35 @@
+/* METROPLEX typography system v117 */
+:root{
+  --fs-body:clamp(16px,1.1vw,18px);
+  --fs-small:clamp(13px,.9vw,15px);
+  --fs-h1:clamp(38px,5.2vw,68px);
+  --fs-h2:clamp(28px,3.5vw,44px);
+  --fs-h3:clamp(20px,2vw,27px);
+  --lh-body:1.65;
+  --lh-head:1.12;
+}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font-size:var(--fs-body);line-height:var(--lh-body);letter-spacing:-.005em}
+h1,h2,h3,h4{line-height:var(--lh-head);letter-spacing:-.025em;text-wrap:balance}
+h1{font-size:var(--fs-h1);max-width:19ch}
+h2{font-size:var(--fs-h2);max-width:28ch}
+h3{font-size:var(--fs-h3)}
+p,li,summary,label,input,select,textarea,button{font-size:inherit}
+.section-head p,.hero p,.service-hero p,.page-hero p{font-size:clamp(17px,1.4vw,21px);line-height:1.58;max-width:68ch}
+.eyebrow,.works-tag,.portfolio-tag,.badge,.chip{font-size:var(--fs-small);letter-spacing:.055em}
+.btn,.service-cta,.works-link{font-size:clamp(15px,1vw,17px);line-height:1.2}
+.card p,.service-card p,.works-card p,.portfolio-card p{line-height:1.58}
+.footer,.footer p,.footer a{font-size:clamp(14px,.95vw,16px)}
+.article-content{font-size:clamp(17px,1.2vw,19px);line-height:1.75}
+.article-content h2{margin-top:1.8em}.article-content h3{margin-top:1.5em}
+@media(max-width:780px){
+  :root{--fs-body:16px;--fs-h1:clamp(34px,10vw,46px);--fs-h2:clamp(27px,8vw,36px);--fs-h3:clamp(20px,5.7vw,25px)}
+  body{line-height:1.6}
+  h1{max-width:15ch}
+  .section-head p,.hero p,.service-hero p,.page-hero p{font-size:17px}
+  .btn{min-height:48px}
+}
+@media(max-width:380px){
+  :root{--fs-h1:32px;--fs-h2:26px;--fs-h3:20px}
+  body{font-size:15.5px}
+}

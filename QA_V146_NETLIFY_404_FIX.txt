@@ -1,0 +1,15 @@
+METROPLEX v146 — Netlify routing fix
+
+Исправлено:
+1. Удален catch-all redirect /* -> /404.html из netlify.toml.
+   Он перехватывал /uk/ и отправлял посетителя на 404 до нормальной выдачи /uk/index.html.
+2. Корневая 404.html больше не содержит meta refresh на /uk/404.html.
+3. Основные редиректы сохранены:
+   / -> /uk/
+   /index.html -> /uk/
+   /uk/index.html -> /uk/
+   /ru/index.html -> /ru/
+4. Publish directory остается "."
+5. Functions directory остается "netlify/functions"
+
+После коммита в GitHub Netlify должен автоматически выполнить новый deploy.

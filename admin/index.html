@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#0A0C0F">
+  <meta name="description" content="Административная панель METROPLEX">
+  <title>METROPLEX CMS</title>
+  <link rel="icon" href="../assets/img/logo/favicon-32.png" sizes="32x32">
+  <link rel="preconnect" href="https://identity.netlify.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="stylesheet" href="./admin.css?v=137">
+  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <div id="cms-loading" class="cms-loading" role="status" aria-live="polite">
+    <strong>METROPLEX CMS</strong>
+    <span>Загрузка админки...</span>
+  </div>
+  <noscript>Для работы админки необходимо включить JavaScript.</noscript>
+
+  <script defer src="https://unpkg.com/decap-cms@3.8.4/dist/decap-cms.js"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      function showError(message) {
+        var box = document.getElementById('cms-loading');
+        if (!box) return;
+        box.classList.add('is-error');
+        box.innerHTML = '<strong>Админка не загрузилась</strong><span>' + message + '</span><button type="button" onclick="window.location.reload()">Повторить</button>';
+      }
+
+      window.addEventListener('load', function () {
+        window.setTimeout(function () {
+          if (!window.CMS) {
+            showError('Проверьте интернет-соединение и доступ к CDN Decap CMS.');
+          } else {
+            var box = document.getElementById('cms-loading');
+            if (box) box.remove();
+          }
+        }, 5000);
+      });
+
+      function bindIdentity() {
+        if (!window.netlifyIdentity) return;
+
+        window.netlifyIdentity.on('login', function () {
+          if (window.location.pathname !== '/admin/' && window.location.pathname !== '/admin') {
+            window.location.assign('/admin/');
+          }
+        });
+
+        window.netlifyIdentity.on('logout', function () {
+          window.location.assign('/');
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', bindIdentity, { once: true });
+      } else {
+        bindIdentity();
+      }
+    })();
+  </script>
+</body>
+</html>

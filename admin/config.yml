@@ -1,0 +1,167 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: simple
+site_url: "https://metroplex.com.ua"
+display_url: "https://metroplex.com.ua"
+logo_url: "/assets/img/logo/logo-light-ru.webp"
+locale: "ru"
+
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+collections:
+  - name: "site_settings"
+    label: "Контакты сайта"
+    editor:
+      preview: false
+    files:
+      - name: "contacts"
+        label: "Телефон, Telegram, адрес"
+        file: "assets/data/site-settings.json"
+        format: "json"
+        fields:
+          - { label: "Телефон на сайте", name: "phone_display", widget: "string", hint: "Например: 0973044556", pattern: ["^[0-9+()\\s-]{7,20}$", "Введите корректный номер телефона"] }
+          - { label: "Телефон для кнопки Позвонить", name: "phone_tel", widget: "string", hint: "Например: +380973044556", pattern: ["^\\+[0-9]{10,15}$", "Используйте международный формат, например +380973044556"] }
+          - { label: "Telegram ссылка", name: "telegram_url", widget: "string", hint: "Например: https://t.me/metroplex или tg://resolve?phone=...", pattern: ["^(https://t\\.me/|tg://).+", "Введите ссылку https://t.me/... или tg://..."] }
+          - { label: "Подпись кнопки Telegram", name: "telegram_label", widget: "string", default: "Telegram" }
+          - { label: "Адрес UA", name: "address_uk", widget: "string" }
+          - { label: "Адрес RU", name: "address_ru", widget: "string" }
+          - { label: "Заголовок офиса UA", name: "office_title_uk", widget: "string", default: "Харків" }
+          - { label: "Заголовок офиса RU", name: "office_title_ru", widget: "string", default: "Харьков" }
+          - { label: "Графік роботи UA", name: "working_hours_uk", widget: "string", default: "Пн-Сб: 9:00-17:00" }
+          - { label: "График работы RU", name: "working_hours_ru", widget: "string", default: "Пн-Сб: 9:00-17:00" }
+          - { label: "Email", name: "email", widget: "string", required: false, pattern: ["^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$", "Введите корректный email"] }
+
+  - name: "works_uk"
+    label: "Наші роботи UA"
+    editor:
+      preview: false
+    files:
+      - name: "works_uk_file"
+        label: "Карточки робіт UA"
+        file: "assets/data/works-uk.json"
+        format: "json"
+        fields:
+          - label: "Роботи"
+            name: "works"
+            widget: "list"
+            summary: "{{fields.order}}. {{fields.title}}"
+            fields:
+              - { label: "Публікувати", name: "published", widget: "boolean", default: true }
+              - { label: "Порядок", name: "order", widget: "number", value_type: "int", default: 1, min: 1, step: 1 }
+              - { label: "Мітка", name: "tag", widget: "string", required: false }
+              - { label: "Заголовок", name: "title", widget: "string" }
+              - { label: "Опис", name: "excerpt", widget: "text" }
+              - { label: "Локація", name: "location", widget: "string", required: false }
+              - { label: "Матеріал / система", name: "material", widget: "string", required: false }
+              - { label: "Що зроблено", name: "scope", widget: "list", required: false, field: {label: "Пункт", name: "item", widget: "string"} }
+              - { label: "Зображення", name: "image", widget: "image" }
+              - { label: "Alt зображення", name: "image_alt", widget: "string" }
+              - { label: "Посилання", name: "url", widget: "string", required: false, hint: "Можна залишити пустим" }
+
+  - name: "works_ru"
+    label: "Наши работы RU"
+    editor:
+      preview: false
+    files:
+      - name: "works_ru_file"
+        label: "Карточки работ RU"
+        file: "assets/data/works-ru.json"
+        format: "json"
+        fields:
+          - label: "Работы"
+            name: "works"
+            widget: "list"
+            summary: "{{fields.order}}. {{fields.title}}"
+            fields:
+              - { label: "Публиковать", name: "published", widget: "boolean", default: true }
+              - { label: "Порядок", name: "order", widget: "number", value_type: "int", default: 1, min: 1, step: 1 }
+              - { label: "Метка", name: "tag", widget: "string", required: false }
+              - { label: "Заголовок", name: "title", widget: "string" }
+              - { label: "Описание", name: "excerpt", widget: "text" }
+              - { label: "Локация", name: "location", widget: "string", required: false }
+              - { label: "Материал / система", name: "material", widget: "string", required: false }
+              - { label: "Что сделано", name: "scope", widget: "list", required: false, field: {label: "Пункт", name: "item", widget: "string"} }
+              - { label: "Изображение", name: "image", widget: "image" }
+              - { label: "Alt изображения", name: "image_alt", widget: "string" }
+              - { label: "Ссылка", name: "url", widget: "string", required: false, hint: "Можно оставить пустой" }
+
+  - name: "blog_cards_uk"
+    label: "Блог UA: карточки и новые статьи"
+    editor:
+      preview: false
+    files:
+      - name: "articles_uk"
+        label: "Карточки статей UA"
+        file: "assets/data/blog-uk.json"
+        format: "json"
+        fields:
+          - label: "Статьи"
+            name: "articles"
+            widget: "list"
+            summary: "{{fields.order}}. {{fields.title}}"
+            fields:
+              - { label: "Публиковать", name: "published", widget: "boolean", default: true }
+              - { label: "Порядок", name: "order", widget: "number", value_type: "int", default: 1, min: 1, step: 1 }
+              - { label: "Slug", name: "slug", widget: "string", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Только латинские буквы, цифры и дефисы"], hint: "Например: montazh-profnastylu-na-dakh" }
+              - { label: "Готовая ссылка", name: "url", widget: "string", required: false, hint: "Если отдельной HTML-страницы нет, оставь пустым. Карточка откроет article.html?slug=..." }
+              - { label: "Категория", name: "category", widget: "string", default: "Матеріали" }
+              - { label: "Дата", name: "date", widget: "datetime", required: false, format: "YYYY-MM-DD" }
+              - { label: "Время чтения", name: "read_time", widget: "string", default: "4 хв" }
+              - { label: "Заголовок", name: "title", widget: "string" }
+              - { label: "Краткое описание для карточки", name: "excerpt", widget: "text" }
+              - label: "Тип универсальной иконки"
+                name: "icon_type"
+                widget: "select"
+                required: false
+                options:
+                  - { label: "Материалы", value: "materials" }
+                  - { label: "Экспертная статья", value: "expert" }
+                  - { label: "Обзор и анализ", value: "review" }
+                  - { label: "Советы", value: "advice" }
+                  - { label: "Проектирование", value: "design" }
+                  - { label: "Монтаж", value: "construction" }
+              - { label: "Изображение", name: "image", widget: "image" }
+              - { label: "Alt изображения", name: "image_alt", widget: "string" }
+              - { label: "Текст статьи для динамической страницы", name: "content", widget: "markdown", required: false }
+
+  - name: "blog_cards_ru"
+    label: "Блог RU: карточки и новые статьи"
+    editor:
+      preview: false
+    files:
+      - name: "articles_ru"
+        label: "Карточки статей RU"
+        file: "assets/data/blog-ru.json"
+        format: "json"
+        fields:
+          - label: "Статьи"
+            name: "articles"
+            widget: "list"
+            summary: "{{fields.order}}. {{fields.title}}"
+            fields:
+              - { label: "Публиковать", name: "published", widget: "boolean", default: true }
+              - { label: "Порядок", name: "order", widget: "number", value_type: "int", default: 1, min: 1, step: 1 }
+              - { label: "Slug", name: "slug", widget: "string", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Только латинские буквы, цифры и дефисы"], hint: "Например: montazh-profnastylu-na-dakh" }
+              - { label: "Готовая ссылка", name: "url", widget: "string", required: false, hint: "Если отдельной HTML-страницы нет, оставь пустым. Карточка откроет article.html?slug=..." }
+              - { label: "Категория", name: "category", widget: "string", default: "Материалы" }
+              - { label: "Дата", name: "date", widget: "datetime", required: false, format: "YYYY-MM-DD" }
+              - { label: "Время чтения", name: "read_time", widget: "string", default: "4 мин" }
+              - { label: "Заголовок", name: "title", widget: "string" }
+              - { label: "Краткое описание для карточки", name: "excerpt", widget: "text" }
+              - label: "Тип универсальной иконки"
+                name: "icon_type"
+                widget: "select"
+                required: false
+                options:
+                  - { label: "Материалы", value: "materials" }
+                  - { label: "Экспертная статья", value: "expert" }
+                  - { label: "Обзор и анализ", value: "review" }
+                  - { label: "Советы", value: "advice" }
+                  - { label: "Проектирование", value: "design" }
+                  - { label: "Монтаж", value: "construction" }
+              - { label: "Изображение", name: "image", widget: "image" }
+              - { label: "Alt изображения", name: "image_alt", widget: "string" }
+              - { label: "Текст статьи для динамической страницы", name: "content", widget: "markdown", required: false }

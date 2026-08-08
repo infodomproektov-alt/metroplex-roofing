@@ -1,0 +1,134 @@
+/* METROPLEX v125: content typography audit and normalization */
+:root{
+  --text-body-size:17px;
+  --text-body-line:1.68;
+  --text-small-size:14px;
+  --text-measure:72ch;
+}
+body{font-size:var(--text-body-size);line-height:var(--text-body-line)}
+
+/* Main content: readable measure and stable hierarchy */
+.article-content,.content-card,.seo-card,.seo-note,.editorial-policy,.service-local-proof,.case-method,.content-trust,.content-related{
+  font-size:17px;
+  line-height:1.68;
+}
+.article-content>p,.article-content>ul,.article-content>ol,
+.content-card>p,.content-card>ul,.content-card>ol,
+.editorial-policy>p,.service-local-proof>p,.case-method>p{
+  max-width:var(--text-measure);
+}
+.article-content p,.article-content li,.content-card p,.content-card li,
+.seo-card p,.seo-card li,.seo-note p,.seo-note li,
+.editorial-policy p,.editorial-policy li,.service-local-proof p,.service-local-proof li,
+.case-method p,.case-method li,.content-trust p,.content-related p{
+  font-size:17px!important;
+  line-height:1.68!important;
+}
+.article-content h2,.content-card h2,.seo-card h2,.editorial-policy h2,
+.service-local-proof h2,.case-method h2,.content-trust h2,.content-related h2{
+  font-size:clamp(28px,3vw,36px)!important;
+  line-height:1.16!important;
+  letter-spacing:-.02em;
+  margin-top:1.65em;
+  margin-bottom:.55em;
+}
+.article-content h3,.content-card h3,.seo-card h3,.editorial-policy h3,
+.service-local-proof h3,.case-method h3{
+  font-size:clamp(21px,2vw,25px)!important;
+  line-height:1.25!important;
+  letter-spacing:-.012em;
+  margin-top:1.35em;
+  margin-bottom:.5em;
+}
+.article-content h4,.content-card h4,.seo-card h4{
+  font-size:18px!important;
+  line-height:1.35!important;
+}
+.article-lead,.article-page.article-lead{
+  font-size:clamp(20px,2vw,24px)!important;
+  line-height:1.5!important;
+}
+.article-content figcaption,.case-gallery figcaption{
+  font-size:14px!important;
+  line-height:1.5!important;
+}
+
+/* Section descriptions and service/card copy */
+.section-head p,.page-hero p,.hero-sub,.cta p,.works-sales-intro p{
+  font-size:17px!important;
+  line-height:1.65!important;
+}
+.service-body p,.service-feature p,.step p,.work-card-body p,.blog-card-body p,
+.faq p,.feature p,.contact-detail-card p{
+  font-size:15.5px!important;
+  line-height:1.58!important;
+}
+.service-body h3{font-size:clamp(21px,2vw,25px)!important;line-height:1.22!important}
+.step h3,.work-card-body h3{font-size:clamp(20px,2vw,24px)!important;line-height:1.24!important}
+.blog-card-body h2,.blog-card-body h3{line-height:1.25!important}
+.faq summary{font-size:16.5px!important;line-height:1.4!important}
+.text-link,.work-more{font-size:15px!important}
+.eyebrow,.content-trust__eyebrow,.content-related__eyebrow{font-size:12px!important;line-height:1.35!important}
+.breadcrumbs,.work-tag,.work-meta span,.form-status,.field label,.consent{line-height:1.45!important}
+
+/* Prevent tiny inherited text in actual content */
+main small,.article-content small,.content-card small{font-size:13.5px;line-height:1.5}
+
+@media (max-width:780px){
+  :root{--text-body-size:16px;--text-body-line:1.62;--text-measure:100%}
+  .article-content,.content-card,.seo-card,.seo-note,.editorial-policy,.service-local-proof,.case-method,.content-trust,.content-related{
+    font-size:16px;
+    line-height:1.62;
+  }
+  .article-content p,.article-content li,.content-card p,.content-card li,
+  .seo-card p,.seo-card li,.seo-note p,.seo-note li,.editorial-policy p,.editorial-policy li,
+  .service-local-proof p,.service-local-proof li,.case-method p,.case-method li,
+  .content-trust p,.content-related p{
+    font-size:16px!important;
+    line-height:1.62!important;
+  }
+  .article-content h2,.content-card h2,.seo-card h2,.editorial-policy h2,
+  .service-local-proof h2,.case-method h2,.content-trust h2,.content-related h2{
+    font-size:clamp(25px,7.5vw,31px)!important;
+    line-height:1.16!important;
+    margin-top:1.45em;
+  }
+  .article-content h3,.content-card h3,.seo-card h3,.editorial-policy h3,
+  .service-local-proof h3,.case-method h3{
+    font-size:clamp(20px,5.8vw,23px)!important;
+  }
+  .section-head p,.page-hero p,.hero-sub,.cta p,.works-sales-intro p{
+    font-size:16px!important;
+    line-height:1.6!important;
+  }
+  .service-body p,.service-feature p,.step p,.work-card-body p,.blog-card-body p,
+  .faq p,.feature p,.contact-detail-card p{
+    font-size:15px!important;
+    line-height:1.55!important;
+  }
+  .faq summary{font-size:16px!important}
+}
+
+@media (max-width:390px){
+  .article-content p,.article-content li,.content-card p,.content-card li,
+  .seo-card p,.seo-card li,.seo-note p,.seo-note li,.editorial-policy p,.editorial-policy li,
+  .service-local-proof p,.service-local-proof li,.case-method p,.case-method li,
+  .content-trust p,.content-related p{
+    font-size:16px!important;
+    line-height:1.6!important;
+  }
+  .article-content h2,.content-card h2,.seo-card h2,.editorial-policy h2,
+  .service-local-proof h2,.case-method h2,.content-trust h2,.content-related h2{
+    font-size:25px!important;
+  }
+  .article-content h3,.content-card h3,.seo-card h3,.editorial-policy h3,
+  .service-local-proof h3,.case-method h3{font-size:20px!important}
+  .service-body p,.service-feature p,.step p,.work-card-body p,.blog-card-body p,
+  .faq p,.feature p,.contact-detail-card p{font-size:14.5px!important}
+}
+
+/* v127 commercial roofing */
+.commercial-object-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+.commercial-feature{grid-column:span 2;}
+@media(max-width:900px){.commercial-object-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.commercial-feature{grid-column:auto;}}
+@media(max-width:560px){.commercial-object-grid{grid-template-columns:1fr;}}
