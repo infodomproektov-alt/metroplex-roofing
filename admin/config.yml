@@ -3,8 +3,8 @@ backend:
   branch: main
 
 publish_mode: simple
-site_url: "https://metroplex.com.ua"
-display_url: "https://metroplex.com.ua"
+site_url: "https://metroplex-krovlya.kh.ua"
+display_url: "https://metroplex-krovlya.kh.ua"
 logo_url: "/assets/img/logo/logo-light-ru.webp"
 locale: "ru"
 
